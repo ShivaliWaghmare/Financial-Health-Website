@@ -1,0 +1,88 @@
+/* LOGIN PAGE CSS */
+
+.login-page {
+    background-image: url('images/financeImage.jpg');
+    background-size: 100%; 
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin-top: 50px;
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form {
+    width: 600px; /* Set the width of the login form */
+    max-width: 100%; /* Ensure the login form does not exceed 90% of the viewport width */
+    background-color: rgba(78, 73, 73, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(46, 204, 113);
+  }
+  
+  .login-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .login-input:focus {
+    border-color: #0079ff; /* NerdWallet blue */
+  }
+  
+  .signup-link {
+    text-decoration: none;
+    color: #0079ff; /* NerdWallet blue */
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    background-color: rgb(46, 204, 113); /* Emerald green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .login-button:hover {
+    background-color: #3ba47c; /* Darker green */
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .btn {
+    outline: none;
+  }
+  
+  .spinner {
+    color: #0079ff; /* NerdWallet blue */
+  }

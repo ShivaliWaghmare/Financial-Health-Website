@@ -3,7 +3,8 @@ import React from 'react';
 import Layout from '../components/Layout/Layout';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick-theme.css'; 
+import "../css/homepage.css";
 
 const HomePage = () => {
   // Slider Setting
@@ -72,7 +73,7 @@ const HomePage = () => {
               <p className="feature-title">{d.feature}</p>
               <p className="feature-review">{d.Review}</p>
               <p className="feature-importance">{d.Importance}</p>
-              <button className="btn btn-primary">{d.Path}</button>
+              <button to={d.Path} className="btn btn-primary">{d.Path}</button>
             </div>
           </div>
         ))}
@@ -87,7 +88,7 @@ const HomePage = () => {
      {
         feature: 'Expense Tracking',
         Review: 'Expense tracking allows users to monitor their spending habits and categorize expenses for better financial management.',
-     Importance: 'Essential for budgeting and identifying areas where expenses can be optimized, leading to improved financial discipline and savings.',
+        Importance: 'Essential for budgeting and identifying areas where expenses can be optimized, leading to improved financial discipline and savings.',
         Path: '/expense',
      },
      {
