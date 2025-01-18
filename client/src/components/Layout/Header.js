@@ -122,7 +122,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <Link to="/portfolio" className="nav-link">
-                Predictor
+                Advisory Models
               </Link>
             </li>
             <li className="nav-item">

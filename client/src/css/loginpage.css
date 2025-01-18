@@ -1,43 +1,52 @@
 /* LOGIN PAGE CSS */
 
 .login-page {
-    background-image: url('images/financeImage.jpg');
+    background-image: url('../images/financeImage.jpg');
     background-size: 100%; 
-    background-position: center; /* Centers the background image */
+    background-position: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    margin-top: 50px;
-    background-color: #fff; /* White background */
-    color: #333; /* Dark text color */
-    padding: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 85vh;
+    top: 6em;
+    margin: 65px;
+    padding: 50px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    border-radius: 2em;
   }
   
   .login-form {
-    width: 600px; /* Set the width of the login form */
+    width: 400px; /* Set the width of the login form */
     max-width: 100%; /* Ensure the login form does not exceed 90% of the viewport width */
-    background-color: rgba(78, 73, 73, 0.9); /* Semi-transparent white background */
+    background-color: rgba(78, 73, 73, 0.766); /* Semi-transparent white background */
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
   }
   
+  .form-label .ant-form-item-label label{
+    color: bisque;
+    margin-left: 2em;
+  }
+
   .login-title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     color: rgb(46, 204, 113);
+    display: flex;
+    justify-content: center;
   }
-  
+
+
   .login-input {
     width: 300px;
     height: 40px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #968787;
     border-radius: 5px;
-    padding: 10px;
+    margin-left: 2em;
   }
   
   .login-input:focus {
@@ -58,13 +67,15 @@
     margin-bottom: 1rem;
     font-size: 18px;
     background-color: rgb(46, 204, 113); /* Emerald green */
-    color: #fff;
+    color: beige;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 150px;
     text-align: center;
+    margin-left: 5.5em;
+    margin-top: 1em;
   }
   
   .login-button:hover {
@@ -86,3 +97,58 @@
   .spinner {
     color: #0079ff; /* NerdWallet blue */
   }
+
+  /* Responsive adjustments for the login page */
+@media (max-width: 768px) {
+  .login-page {
+      margin: 20px;
+      padding: 20px;
+      height: auto; /* Adjust height for smaller screens */
+      top: 4em;
+  }
+
+  .login-form {
+      width: 90%; /* Adjust width to fit smaller screens */
+      padding: 15px;
+  }
+
+  .form-label .ant-form-item-label label {
+      margin-left: 1em; /* Adjust label margin for smaller screens */
+  }
+
+  .login-title {
+      font-size: 28px; /* Slightly reduce the title font size */
+      margin-bottom: 15px;
+  }
+
+  .login-input {
+      width: 100%; /* Make input fields responsive */
+      margin-left: 0; /* Remove unnecessary margin on smaller screens */
+  }
+
+  .login-button {
+      width: 100%; /* Make button responsive */
+      margin-left: 0;
+      margin-top: 1em;
+  }
+}
+
+/* Further adjustments for very small screens (mobile) */
+@media (max-width: 480px) {
+  .login-title {
+      font-size: 24px; /* Reduce title font size further */
+  }
+
+  .login-form {
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .login-input {
+      height: 35px; /* Adjust input height */
+  }
+
+  .login-button {
+      font-size: 16px; /* Adjust button font size */
+      padding: 8px 15px;
+  }
+}

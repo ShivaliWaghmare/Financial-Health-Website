@@ -1,7 +1,70 @@
 /* Register Page CSS */
 .register-page{
+    background-image: url('../images/register_page.jpeg');
+    background-size: 100%; 
+    background-position: center; 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 85vh;
+    top: 6em;
+    margin: 65px;
+    padding: 50px;
+    margin-bottom: 0em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 2em;
+  }
+
+  .register-form{
+    width: 400px; /* Set the width of the login form */
+    max-width: 100%; /* Ensure the login form does not exceed 90% of the viewport width */
+    background-color: rgba(78, 73, 73, 0.766); /* Semi-transparent white background */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+  }
+
+  .register-label .ant-form-item-label label{
+    color: bisque;
+    margin-left: 2em;
+  }
+
+  .register-input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #968787;
+    border-radius: 5px;
+    margin-left: 2em;
+  }
+
+  .register-title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(46, 204, 113);
+    display: flex;
+    justify-content: center;
+  }
+
+  .register-button {
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    background-color: rgb(46, 204, 113); /* Emerald green */
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    text-align: center;
+    margin-left: 5.5em;
+  }
+
+  .signin-link {
+    text-decoration: none;
+    color: #0079ff; /* NerdWallet blue */
+    margin-left: 2em;
   }

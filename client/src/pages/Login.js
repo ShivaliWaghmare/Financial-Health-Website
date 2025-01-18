@@ -38,10 +38,10 @@ const submitHandler = async (values) => {
         {loading && <Spinner />}
             <Form layout='vertical' onFinish={submitHandler} className='login-form'>
                   <h1 className='login-title'>Login Form</h1>
-                <Form.Item label="Email address" name="email">
+                <Form.Item className='form-label' label="Email address" name="email">
                     <Input className='login-input' type='email' />
                 </Form.Item>
-                <Form.Item label="Password" name="password">
+                <Form.Item className='form-label' label="Password" name="password">
                     <Input className='login-input' type='password' />
                 </Form.Item>
                 <div className='d-flex justify-content-between'>

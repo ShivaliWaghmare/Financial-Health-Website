@@ -33,21 +33,21 @@ useEffect(() => {
     <>
         <div className='register-page'>
           {loading && <Spinner />}
-            <Form layout='vertical' onFinish={submitHandler}>
-                  <h1>Register Form</h1>
-                <Form.Item label="Name" name="name">
-                    <Input autoComplete='given-name' />
+            <Form layout='vertical' onFinish={submitHandler} className='register-form'>
+                  <h1 className='register-title'>Register Form</h1>
+                <Form.Item className='register-label' label="Name" name="name">
+                    <Input className='register-input' autoComplete='given-name' />
                 </Form.Item>
-                <Form.Item label="Email" name="email">
-                    <Input type='email' autoComplete='off' />
+                <Form.Item className='register-label' label="Email" name="email">
+                    <Input className='register-input' type='email' autoComplete='off' />
                 </Form.Item>
-                <Form.Item label="Password" name="password">
-                    <Input type='password' />
+                <Form.Item className='register-label' label="Password" name="password">
+                    <Input className='register-input' type='password' />
                 </Form.Item>
                 <div className='d-flex justify-content-between'>
-                     <Link to='/login' className='p-4'>Already Register? Click here to Login</Link>
-                     <button className='btn btn-primary'>Register</button>
+                     <button className='btn btn-primary register-button'>Register</button>
                 </div>
+                <Link to='/login' className='p-4 signin-link'>Already Register? Click here to Login</Link>
             </Form>
         </div>
    
