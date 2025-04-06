@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from './StockPredictor.module.css';
+import styles from '../css/StockPredictor.module.css'
+// import Layout from 'antd'
 
 const StockPredictor = () => {
   const [ticker, setTicker] = useState('');
@@ -23,11 +24,12 @@ const StockPredictor = () => {
     if (!validateForm()) return;
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/predict', { ticker, date });
+      const response = await axios.post('http://localhost:8081/api/v1/users/invix', { ticker, date });
       setPredictedPrice(response.data.predicted_price);
       setShowResult(true);
       setErrorMsg('');
-    } catch (error) {
+    }
+    catch (error) {
       console.error('Prediction error:', error);
       setErrorMsg('Prediction failed. Please check your inputs or try again later.');
     }
@@ -76,6 +78,7 @@ const StockPredictor = () => {
   }
 
   return (
+    // <Layout>
     <div className={styles.container}>
       <h1 className={styles.title}>STOCK PRICE PREDICTOR</h1>
       <p className={styles.subtitle}>
@@ -120,6 +123,7 @@ const StockPredictor = () => {
         </button>
       </div>
     </div>
+    // </Layout>
   );
 };
 

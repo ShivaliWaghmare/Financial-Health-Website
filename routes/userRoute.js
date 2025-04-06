@@ -3,6 +3,7 @@ const {
   loginControllers,
   registerControllers,
 } = require("../controllers/userControllers");
+const invixController = require ("../controllers/StockController");
 
 // Router Object : To preform routing
 const router = express.Router();
@@ -19,9 +20,8 @@ router.post("/register", registerControllers);
 // add your respective Controllers: name them mostly "expenseControllers"
 router.post("/expense");
 
-// POST || INVESMENT PORTFOLIO
-// add your respective Controllers: name them mostly "portfolioContollers"
-router.post("/predictor");
+// POST || STOCK PRICE PREDICTION MODEL (INVIX)
+router.post("/invix", invixController);
 
 // POST || FINANCIAL BLOG
 // add your respective Controllers: name them mostly "blogControllers"
