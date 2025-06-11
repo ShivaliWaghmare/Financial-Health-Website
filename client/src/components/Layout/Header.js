@@ -110,7 +110,7 @@ const Header = () => {
 
         <nav className={`nav-links ${isNavOpen ? 'open' : ''}`}>
           <Link to="/expense" className="nav-link">Expense Tracking</Link>
-          <Link to="/portfolio" className="nav-link">Advisory Models</Link>
+          <Link to="/predictor" className="nav-link">Advisory Models</Link>
           <Link to="/aboutUs" className="nav-link">About Us</Link>
           {loginUser && (
             <div className='intro'>
@@ -119,8 +119,6 @@ const Header = () => {
             </div>
           )}
         </nav>
-
-        
       </div>
     </header>
   );
