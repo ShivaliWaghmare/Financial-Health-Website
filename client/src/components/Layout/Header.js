@@ -107,7 +107,7 @@ const Header = () => {
           ☰
         </button>
 
-<<<<<<< HEAD
+
         <nav className={`nav-links ${isNavOpen ? 'open' : ''}`}>
           <Link to="/expense" className="nav-link">Expense Tracking</Link>
           <Link to="/portfolio" className="nav-link">Advisory Models</Link>
@@ -119,44 +119,8 @@ const Header = () => {
             </div>
           )}
         </nav>
-=======
-        <div
-          className={`navbar-nav ${
-            isNavOpen ? 'active' : ''
-          }`} /* Add active class if navbar is toggled */
-        >
-          <ul className='navbar-nav'>
-            <li className="nav-item">
-              <Link to="/expense" className="nav-link">
-                Expense Tracking
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/predictor" className="nav-link">
-                Stock Prediction Model
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/blog" className="nav-link">
-                About Us
-              </Link>
-            </li>
-          </ul>
-        </div>
 
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <p className="nav-link active" aria-current="page">
-              {loginUser && loginUser.name}
-            </p>
-          </li>
-          <li className="nav-item">
-            <button className="btn-primary" onClick={logoutHandler}>
-              Logout
-            </button>
-          </li>
-        </ul>
->>>>>>> eecf13201a1985674b93c832ad15ac6e0c1b7061
+        
       </div>
     </header>
   );
