@@ -1,0 +1,115 @@
+.about-us {
+    background-color: #050202;
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+    color: #2ecc71;
+    margin-bottom: 20px;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .about-section {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+  }
+  
+  .about-section.alt {
+    background-color: #111111;
+    padding: 60px 20px;
+    border-radius: 12px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.2rem;
+    color: #2ecc71;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .values-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .values-list li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Graphic / Visual Section */
+  /* .about-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /* .mission-graphic {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #2ecc71 20%, #050202 80%);
+  } */
+  
+  /* .circle-1,
+  .circle-2,
+  .circle-3 {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #2ecc71;
+  } */
+  
+  /* .circle-1 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle-2 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .circle-3 {
+    width: 100px;
+    height: 100px;
+    
+  } */
+  
+  /* .center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .mission-icon {
+    font-size: 2rem;
+  }
+  
+  .mission-text {
+    margin-top: 8px;
+    font-weight: 600;
+  } */
+  

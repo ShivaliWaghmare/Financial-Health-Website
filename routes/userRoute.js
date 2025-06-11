@@ -22,7 +22,7 @@ router.post('/portfolio');
 
 // POST || FINANCIAL BLOG
 // add your respective Controllers: name them mostly "blogControllers"
-router.post('/blog');
+router.post('/aboutUs');
 
 // POST || CALCULATOR
 // add your respective Controllers: name them mostly "calculatorControllers"

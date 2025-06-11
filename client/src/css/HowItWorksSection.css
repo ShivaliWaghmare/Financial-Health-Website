@@ -1,0 +1,142 @@
+.how-it-works-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0a0505 0%, #050202 100%);
+  }
+  
+  .how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .how-it-works-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .how-it-works-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .how-it-works-subtitle {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .step-content {
+    background: linear-gradient(145deg, #0a0a0a 0%, #1a1a1a 100%);
+    border: 1px solid #333333;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step-content:hover {
+    border-color: #2ecc71;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(46, 204, 113, 0.15);
+  }
+  
+  .step-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .step-description {
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.6;
+  }
+  
+  .step-connector {
+    position: absolute;
+    top: 3rem;
+    right: -2rem;
+    width: 4rem;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .connector-line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+  }
+  
+  .connector-arrow {
+    position: absolute;
+    right: -5px;
+    font-size: 1.2rem;
+    color: #2ecc71;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .how-it-works-section {
+      padding: 4rem 1rem;
+    }
+    
+    .how-it-works-title {
+      font-size: 2.2rem;
+    }
+    
+    .steps-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .step-connector {
+      display: none;
+    }
+    
+    .step-content {
+      max-width: none;
+      width: 100%;
+    }
+  }

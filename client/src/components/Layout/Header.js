@@ -71,14 +71,18 @@
 // }
 
 // export default Header;
+
+
+// 
+
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { message } from 'antd';
-import "../../css/header.css";
+import '../../css/header.css';
 
 const Header = () => {
   const [loginUser, setLoginUser] = useState('');
-  const [isNavOpen, setIsNavOpen] = useState(false); // State to toggle navbar
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -94,59 +98,28 @@ const Header = () => {
     navigate('/login');
   };
 
-  const toggleNavbar = () => {
-    setIsNavOpen(!isNavOpen); // Toggle the navbar visibility
-  };
-
   return (
-    <nav className="navbar">
-      <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
-          WealthWise
-        </Link>
+    <header className="main-navbar">
+      <div className="nav-container">
+        <Link to="/" className="logo">WealthWise</Link>
 
-        <button className="navbar-toggler" onClick={toggleNavbar}>
+        <button className="nav-toggle" onClick={() => setIsNavOpen(!isNavOpen)}>
           ☰
         </button>
 
-        <div
-          className={`navbar-nav ${
-            isNavOpen ? 'active' : ''
-          }`} /* Add active class if navbar is toggled */
-        >
-          <ul className='navbar-nav'>
-            <li className="nav-item">
-              <Link to="/expense" className="nav-link">
-                Expense Tracking
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/portfolio" className="nav-link">
-                Advisory Models
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/blog" className="nav-link">
-                About Us
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <p className="nav-link active" aria-current="page">
-              {loginUser && loginUser.name}
-            </p>
-          </li>
-          <li className="nav-item">
-            <button className="btn-primary" onClick={logoutHandler}>
-              Logout
-            </button>
-          </li>
-        </ul>
+        <nav className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+          <Link to="/expense" className="nav-link">Expense Tracking</Link>
+          <Link to="/portfolio" className="nav-link">Advisory Models</Link>
+          <Link to="/aboutUs" className="nav-link">About Us</Link>
+          {loginUser && (
+            <div className='intro'>
+              <span className="nav-user">Hi, {loginUser.name}</span>
+              <button className="logout-btn" onClick={logoutHandler}>Logout</button>
+            </div>
+          )}
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 };
 
