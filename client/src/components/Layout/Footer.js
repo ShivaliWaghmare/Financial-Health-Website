@@ -2,7 +2,16 @@ import React from 'react';
 import '../../css/footer.css';
 
 const Footer = () => {
+<<<<<<< HEAD
   const currentYear = new Date().getFullYear();
+=======
+  return (
+    <div className='bg-dark text-light p-4'>
+        <h6 className='text-center'>All right reserved &copy; WealthWise Team</h6>
+    </div>
+  )
+}
+>>>>>>> eecf13201a1985674b93c832ad15ac6e0c1b7061
 
   const footerLinks = {
     product: [
