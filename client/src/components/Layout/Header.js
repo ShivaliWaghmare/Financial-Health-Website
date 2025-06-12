@@ -111,6 +111,7 @@ const Header = () => {
         <nav className={`nav-links ${isNavOpen ? 'open' : ''}`}>
           <Link to="/expense" className="nav-link">Expense Tracking</Link>
           <Link to="/predictor" className="nav-link">Advisory Models</Link>
+          <Link to="/calculator" className="nav-link">Calculator</Link>
           <Link to="/aboutUs" className="nav-link">About Us</Link>
           {loginUser && (
             <div className='intro'>
