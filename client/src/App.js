@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import AboutUs from './pages/AboutUs';
 import StockPredictor from './pages/StockPredictor';
+import FinancialHealth from './pages/FinancialHealth';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/aboutUs' element={<AboutUs />} />
         <Route path='/predictor' element={<StockPredictor />}  />
+        <Route path='/financialHealthChecker' element={<FinancialHealth />} />
       </Routes>
     </>
   );

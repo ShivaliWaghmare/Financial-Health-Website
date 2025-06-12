@@ -1,0 +1,93 @@
+.tips-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 3rem 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .tips-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #2ecc71;
+  }
+  
+  .tips-carousel {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .tip-card {
+    background: rgba(46, 204, 113, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    transition: all 0.5s ease;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tip-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .tip-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tip-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tip-indicator.active {
+    background: #2ecc71;
+    transform: scale(1.2);
+  }
+  
+  .tip-indicator:hover {
+    background: rgba(46, 204, 113, 0.7);
+  }
+  
+  @media (max-width: 768px) {
+    .tips-section {
+      margin: 1rem;
+      padding: 2rem 1rem;
+    }
+    
+    .tip-card {
+      padding: 1.5rem;
+      min-height: 100px;
+    }
+    
+    .tip-card p {
+      font-size: 1rem;
+    }
+  }

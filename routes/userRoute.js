@@ -29,7 +29,7 @@ router.post("/blog");
 
 // POST || CALCULATOR
 // add your respective Controllers: name them mostly "calculatorControllers"
-router.post("/calculator");
+router.post("/financialHealthChecker");
 
 // Export:
 module.exports = router;

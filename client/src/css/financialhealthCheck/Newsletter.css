@@ -1,0 +1,116 @@
+.newsletter-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 3rem 2rem;
+    margin: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .newsletter-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2ecc71;
+  }
+  
+  .newsletter-section p {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: stretch;
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .email-input:focus {
+    outline: none;
+    border-color: #2ecc71;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+  }
+  
+  .email-input::placeholder {
+    color: #888;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  .success-message {
+    margin-top: 1rem;
+    color: #2ecc71;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    animation: slideInUp 0.5s ease-out;
+  }
+  
+  .success-icon {
+    font-size: 1.2rem;
+  }
+  
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-section {
+      margin: 1rem;
+      padding: 2rem 1rem;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .submit-btn {
+      padding: 1rem;
+    }
+  }
